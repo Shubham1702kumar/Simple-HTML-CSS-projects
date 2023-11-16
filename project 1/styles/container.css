@@ -1,0 +1,69 @@
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: black;
+}
+.box {
+  margin: 6rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  border: 2px solid pink;
+  height: 40rem;
+}
+
+.box-upper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  margin-bottom: 2rem;
+}
+.image img {
+  border-radius: 50%;
+  max-width: 10rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.profession p {
+  font-size: 1.9rem;
+  color: transparent;
+  background: url("../images/text-image/pexels-artem-saranin-1547813.jpg");
+  /* background-size: cover; */
+  -webkit-text-stroke: 0.1rem black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: scale(1, 1);
+}
+
+.box-lower {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  width: 100%;
+  height: 100%;
+}
+.description p {
+  /* border: 2px solid red; */
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+}

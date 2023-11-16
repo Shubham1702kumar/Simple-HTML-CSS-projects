@@ -1,0 +1,9 @@
+@media screen and (min-width: 100px) and (max-width: 720px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+}
