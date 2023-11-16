@@ -1,6 +1,6 @@
 # Simple-HTML-CSS-projects </br></br>
 Myself Shubham a buoyant young soul bubbling with enthusiasm and </br>
-an insatiable curiosity for the world of website development.</br></br>/br</br>
+an insatiable curiosity for the world of website development.</br></br></br>
 
 
 In this repo i am going to create 30 simple projects on HTML </br>
