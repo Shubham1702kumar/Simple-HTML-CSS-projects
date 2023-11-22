@@ -25,9 +25,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .image {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.image .tooltip {
+  position: absolute;
+  bottom: -20%;
+  white-space: none;
+  /* left: -25%; */
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  pointer-events: none;
 }
 .image img {
   border-radius: 50%;
@@ -37,7 +56,7 @@
 .name {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 .profession p {
   font-size: 1.9rem;
@@ -54,17 +73,88 @@
   width: 100%;
   height: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .description {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  /* border: 2px solid purple; */
 }
 .description p {
   /* border: 2px solid red; */
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.2rem;
+}
+
+.links {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 6%;
+}
+.github,
+.insta,
+.twitter {
+  align-self: flex-start;
+  margin-top: 0;
+  display: inline-block;
+  position: relative;
+}
+.github,
+.insta,
+.twitter a {
+  padding: 0%;
+  margin: 0%;
+  display: inline-block;
+  /* border: 2px solid red; */
+  /* border-radius: 2rem; */
+}
+.links i {
+  font-size: 3.6rem;
+  color: black;
+  display: inline-block;
+}
+.github,
+.insta,
+.twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.links .tooltip {
+  position: absolute;
+  white-space: none;
+  bottom: -50%;
+  /* left: -25%; */
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  pointer-events: none;
+}
+.github:hover .tooltip {
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+
+.insta:hover .tooltip {
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+.twitter:hover .tooltip {
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+.image:hover .tooltip {
+  opacity: 1;
+  transition: opacity 0.15s;
 }
